@@ -1,0 +1,356 @@
+.navbar,
+.hero,
+.aboutus,
+.services,
+.parallex,
+.gallery,
+.footer {
+    font-family: 'Exo', sans-serif;
+}
+
+body {
+    overflow: auto;
+    position: relative;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    background-color: black;
+}
+
+.hero,
+.aboutus,
+.services,
+.parallex,
+.gallery,
+.footer {
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: first;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent !important;
+}
+
+.navbar .nav-link,
+.navbar-brand {
+    color: #f49921;
+}
+.navbar-toggler{
+    color: #f49921;
+}
+.navbar-toggle-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar .nav-link {
+    border-bottom: 1px solid transparent;
+    transition: .3s;
+}
+
+.navbar .nav-link:hover {
+    border-bottom: 1px solid #f49921;
+}
+
+.navbar .active {
+    color: #f49921;
+    border-bottom: 1px solid #f49921;
+}
+.navbar-brand img{
+    width: 40px;
+    height: 40px;
+}
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../imgs/hero_bg1.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #f49921;
+}
+.hero h1 {
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.hero a {
+    width: 150px;
+    border-radius: 0px;
+    padding: 7px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #f49921;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.aboutus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: #f49921;
+}
+
+.aboutus small {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.aboutus .col-lg-6:nth-child(1) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.aboutus h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.aboutus p {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.aboutus a {
+    width: 140px;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 9px;
+    outline: none;
+    border: 1px solid #f49921;
+    background: transparent;
+    text-align: center;
+    color: #f49921;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.parallex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../imgs/hero_bg2.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #f49921;
+}
+.parallex img{
+    width: 100px;
+}
+.services{
+    background-color: black;
+    color: #f49921;
+}
+.services .col-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services .box {
+    height: 200px;
+    width: 300px;
+    box-shadow: 2px 4px 7px rgba(255, 115, 0, 0.5);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease-in-out;
+}
+
+.services .box:hover {
+    cursor: pointer;
+    box-shadow: 2px 7px 12px rgba(255, 115, 0, 0.7);
+}
+.services .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery{
+    background-color: black;
+    color: #f49921;
+}
+.footer{
+display: flex;
+align-items: center;
+justify-content: center;
+align-items: center;
+height: 50% !important;
+background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url('../imgs/kitchen1.jfif');
+background-position: center center;
+background-size: cover;
+color: #f49921;
+}
+.footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .first{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.miniRow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+.footer form input{
+    width: 100%;
+    padding: 7px;
+    background: transparent;
+    border: 1px solid #f49921;
+    color: #f49921;
+    outline: none;
+}
+.footer form textarea{
+    width: 100%;
+    resize: none;
+    padding: 7px;
+    background: transparent;
+    border: 1px solid #f49921;
+    color: #f49921;
+    outline: none;
+}
+.footer form input::placeholder, .footer form textarea::placeholder{
+    color: #f49921;
+}
+.footer button{
+    width: 130px;
+    padding: 7px;
+    border: 1px solid #f49921;
+    outline: none;
+    background: transparent;
+    font-weight: bold;
+    color: #f49921;
+}
+.social{
+    list-style: none !important;
+}
+.social li{
+    display: inline-block;
+}
+.social li:nth-child(2){
+    margin-left: 15px;
+}
+.social li a{
+    color: #f49921;
+}
+.footer .logo{
+    text-align: center;
+}
+.footer img{
+    height: 100px;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: #f49921;
+}
+.services h2, .gallery h2{
+    font-weight: bold;
+}
+
+
+/* gallery styling */
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+ .hero{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }   
+ .hero h1{
+     font-size: 35px;
+ }
+ .hero p{
+     text-align: center;
+ }
+ .aboutus{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+ }
+ .aboutus .col-lg-6{
+     display: flex;
+     justify-content: center !important;
+     align-items: center !important;
+     flex-direction: column;
+ }
+ .aboutus p{
+     text-align: center;
+ }
+ .parallex{
+     text-align: center;
+ }
+ .services{
+     height: auto;
+ }
+ .services .row{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ .services .col-sm-12{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 20px;
+ }
+ .container-fluid .col-lg-4{
+     margin-bottom: 20px;
+ }
+ .gallery{
+     height: auto;
+ }
+ .footer{
+     height: auto !important;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     text-align: center;
+ }
+ .footer ul{
+     list-style: none;
+ }
+ .footer form .col-lg-6:nth-child(1){
+     margin-bottom: 7px;
+ }
+ .footer .first{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+}

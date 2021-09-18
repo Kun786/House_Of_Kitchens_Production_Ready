@@ -1,0 +1,130 @@
+.navbar,
+.wardrobes,
+.kitchens,
+footer {
+    font-family: 'Exo', sans-serif;
+    color: #f49921;
+}
+
+.wardrobes small,
+.kitchens small {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.wardrobes h2 {
+    font-weight: bold;
+}
+
+body {
+    background-color: black;
+}
+
+.navbar {
+    width: 100%;
+    background: transparent !important;
+}
+
+.navbar .nav-link,
+.navbar-brand {
+    color: #f49921;
+}
+
+.navbar-toggler {
+    color: #f49921;
+}
+
+.navbar-toggle-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .nav-link {
+    border-bottom: 1px solid transparent;
+    transition: .3s;
+}
+
+.navbar .nav-link:hover {
+    border-bottom: 1px solid #f49921;
+}
+
+.navbar .active {
+    color: #f49921;
+    border-bottom: 1px solid #f49921;
+}
+
+.navbar-brand img {
+    width: 40px;
+    height: 40px;
+}
+
+.kitchens,
+.wardrobes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kitchens .first .col-lg-6:nth-child(1) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.kitchens .first .col-lg-6:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kitchens .second .col-lg-6:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kitchens .second .col-lg-6:nth-child(2) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wardrobes .container .first .col-lg-6:nth-child(2) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wardrobes .container .first .col-lg-6:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wardrobes img,
+.kitchens img {
+    height: 550px;
+}
+
+.wardrobes .second .col-lg-6:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wardrobes .second .col-lg-6:nth-child(1) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+}
